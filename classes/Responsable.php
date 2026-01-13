@@ -1,6 +1,5 @@
 <?php
-    require_once("Employe.php");
-    class Responsable extends Employe implements SocieteRInterface{
+    class Responsable extends Employe implements SocieteRInterface, ResponsableInterface{
         
         private $equipe = [];
 

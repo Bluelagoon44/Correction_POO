@@ -1,5 +1,5 @@
 <?php
-    class Employe{
+    class Employe implements EmployeInterface{
         use CreatedAt;
         use UpdatedAt;
 

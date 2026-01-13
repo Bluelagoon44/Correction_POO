@@ -2,6 +2,8 @@
     require_once("./traits/CreatedAt.php");
     require_once("./traits/UpdatedAt.php");
     require_once("./interfaces/SocieteRInterface.php");
+    require_once("./interfaces/EmployeInterface.php");
+    require_once("./interfaces/ResponsableInterface.php");
     require_once("classes/Employe.php");
     require_once("classes/Responsable.php");
 
