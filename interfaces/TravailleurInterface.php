@@ -1,5 +1,5 @@
 <?php
-    interface EmployeInterface{
+    interface TravailleurInterface{
         public function getNom();
         public function setNom($nom);
         public function getPrenom();

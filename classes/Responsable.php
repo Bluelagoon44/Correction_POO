@@ -1,5 +1,5 @@
 <?php
-    class Responsable extends Employe implements SocieteRInterface, ResponsableInterface{
+    class Responsable extends Travailleur implements SocieteRInterface, ResponsableInterface{
         
         private $equipe = [];
 
@@ -22,6 +22,10 @@
 
         public function yolo($yolo){
             echo "yolo";
+        }
+
+        public function presentation(){
+            echo "<p>Je suis un responsable</p>";
         }
     }
 ?>
