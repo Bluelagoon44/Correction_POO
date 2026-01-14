@@ -13,10 +13,12 @@
         }
 
         public function setEquipe($equipe){
-            $this->equipe = $equipe;
+            foreach($equipe as $travailleur){
+                $this->ajouterEmploye($travailleur);
+            }
         }
 
-        public function ajouterEmploye(Employe $employe){
+        public function ajouterEmploye(ExploiteInterface $employe){
             $this->equipe[] = $employe;
         }
 
@@ -26,6 +28,16 @@
 
         public function presentation(){
             echo "<p>Je suis un responsable</p>";
+        }
+
+        public function faireTravailler(ExploiteInterface $travailleur){
+            $travailleur->travailler();
+        }
+
+        public function faireTravaillerEquipe(){
+            foreach($this->equipe as $travailleur){
+                $travailleur->travailler();
+            }
         }
     }
 ?>
