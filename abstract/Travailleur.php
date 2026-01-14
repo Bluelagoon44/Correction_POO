@@ -29,10 +29,16 @@
         public function setAnciennete($anciennete){
             if($anciennete<=40)
                 $this->anciennete = $anciennete;
+            else
+                throw new \Exception("Trop ancien dans la boîte, nous te remercions");
         }
 
         public static function incrementeNbEmploye(){
-            self::$nbEmploye++;
+            if(self::$nbEmploye < self::NB_EMPLOYE_MAX)
+                self::$nbEmploye++;
+            else{
+                throw new \Exception("Trop d'employés dans l'entreprise, nous n'acceptons plus personne");
+            }
         }
 
         public static function getEmployesPercentage(){

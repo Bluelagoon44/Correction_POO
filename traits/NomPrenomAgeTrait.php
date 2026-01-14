@@ -30,6 +30,8 @@
         public function setAge($age){
             if($age >= 18 && $age <= 65)
                 $this->age = $age;
+            else
+                throw new \Exception("Trop jeune ou trop vieux");
         }
     }
 ?>
