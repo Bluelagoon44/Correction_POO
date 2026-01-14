@@ -1,4 +1,10 @@
 <?php
+    namespace classes;
+    use abstract\Travailleur;
+    use interfaces\ResponsableInterface;
+    use interfaces\SocieteRInterface;
+    use interfaces\ExploiteInterface;
+
     class Responsable extends Travailleur implements SocieteRInterface, ResponsableInterface{
         
         private $equipe = [];

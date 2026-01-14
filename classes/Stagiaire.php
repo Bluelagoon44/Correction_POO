@@ -1,4 +1,8 @@
 <?php
+    namespace classes;
+    use interfaces\ExploiteInterface;
+    use traits\NomPrenomAgeTrait;
+
     class Stagiaire implements ExploiteInterface{
         use NomPrenomAgeTrait;
 
@@ -13,5 +17,4 @@
             echo "<p>Moi, " . $this->prenom . " " . $this->nom . ", je fais le café</p>";
         }
     }
-
 ?>

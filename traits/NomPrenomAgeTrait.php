@@ -1,4 +1,6 @@
 <?php
+    namespace traits;
+
     trait NomPrenomAgeTrait{
         private $nom;
         private $prenom;

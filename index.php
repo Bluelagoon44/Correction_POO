@@ -10,6 +10,9 @@
     require_once("classes/Employe.php");
     require_once("classes/Responsable.php");
     require_once("classes/Stagiaire.php");
+    use classes\Employe;
+    use classes\Stagiaire;
+    use classes\Responsable;
 
     $pierre = new Employe("Yolo", "Pierre", 32, 12);
     $paul = new Employe("Swag", "Paul", 25, 5);
@@ -17,7 +20,7 @@
     $stephanie = new Employe("De Monaco", "Stéphanie", 22, 3);
 
     $jeanMichel = new Stagiaire("Jean", "Jean-Michel", 50);
-
+    
     $yolo = new Responsable("King", "Yolo", 200, 180, [$pierre, $paul, $jacques, $stephanie, $jeanMichel]);
 
     $yolo->faireTravaillerEquipe();

@@ -1,4 +1,6 @@
 <?php
+    namespace interfaces;
+    
     interface TravailleurInterface{
         public function getNom();
         public function setNom($nom);

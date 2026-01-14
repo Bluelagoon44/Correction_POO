@@ -1,8 +1,14 @@
 <?php
+    namespace abstract;
+    use interfaces\TravailleurInterface;
+    use traits\CreatedAt;
+    use traits\UpdatedAt;
+    use traits\NomPrenomAgeTrait as Tartiflette;
+
     abstract class Travailleur implements TravailleurInterface{
         use CreatedAt;
         use UpdatedAt;
-        use NomPrenomAgeTrait;
+        use Tartiflette;
         
         private $anciennete;
         private static $nbEmploye = 0;

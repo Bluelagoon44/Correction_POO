@@ -1,4 +1,6 @@
 <?php
+    namespace traits;
+
     trait CreatedAt{
         private $createdAt;
 
